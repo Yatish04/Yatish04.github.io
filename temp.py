@@ -9,6 +9,7 @@ from tensorflow.python.keras import backend as K
 from tensorflow.python.keras.models import Model
 from tensorflow.python.keras.layers import Input, Dense, GRU, Embedding
 from tensorflow.python.keras.applications import VGG16
+from tensorflow.python.keras.applications import VGG19
 from tensorflow.python.keras.optimizers import RMSprop
 from tensorflow.python.keras.callbacks import ModelCheckpoint, TensorBoard
 from tensorflow.python.keras.preprocessing.text import Tokenizer
@@ -17,6 +18,7 @@ from tensorflow.python.keras.preprocessing.sequence import pad_sequences
 from os import listdir
 from pickle import dump
 from keras.applications.vgg16 import VGG16
+from keras.applications.vgg16 import VGG19
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 from keras.applications.vgg16 import preprocess_input
@@ -25,7 +27,7 @@ from keras.models import Model
 # extract features from each photo in the directory
 def extract_features(directory):
 	# load the model
-	model = VGG16()
+	model = VGG19()
 	# re-structure the model
 	model.layers.pop()
 	model = Model(inputs=model.inputs, outputs=model.layers[-1].output)
