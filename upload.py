@@ -1,6 +1,6 @@
 import requests
 import json
-headers = {"Authorization": "Bearer ya29.GltRBuIZz0L_cmo6sUcHvoFYs9NEfV2PVPf8CCMUk1xdiqX6JV-tjJsBedBIFQqNfRmgq6xBqmXEyvzqDjlB92oFvuTMmAvSlErU-7yBgObtV_2QVvdTMJNkP4nj"
+headers = {"Authorization": "Bearer ya29.GltRBgYfFGk9tN8rj4dwrBU-XUKfPaxT8AaYFy9ejFoOpOrfM6j8MZc5TgSSaQNZeUTZwVuqPTPBSJu2RbRj-xEyEccfAcwiqEp1eLevnpnc71QScCVh15wTohhu"
 } #put ur access token after the word 'Bearer '
 para = {
     "name": "models19.zip", #file name to be uploaded
