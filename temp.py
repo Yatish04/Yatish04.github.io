@@ -18,7 +18,7 @@ from tensorflow.python.keras.preprocessing.sequence import pad_sequences
 from os import listdir
 from pickle import dump
 from keras.applications.vgg16 import VGG16
-from keras.applications.vgg16 import VGG19
+from keras.applications.vgg19 import VGG19
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 from keras.applications.vgg16 import preprocess_input
