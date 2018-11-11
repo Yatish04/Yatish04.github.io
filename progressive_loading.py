@@ -141,7 +141,7 @@ def data_generator(descriptions, photos, tokenizer, max_length):
 			yield [[in_img, in_seq], out_word]
 
 # load training dataset (6K)
-filename = 'Flickr8k_text/Flickr_8k.trainImages.txt'
+filename = 'Flickr_8k.trainImages.txt'
 train = load_set(filename)
 print('Dataset: %d' % len(train))
 # descriptions
