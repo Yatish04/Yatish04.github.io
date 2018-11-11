@@ -70,7 +70,7 @@ def save_descriptions(descriptions, filename):
 	file.write(data)
 	file.close()
 
-filename = 'Flickr8k_text/Flickr8k.token.txt'
+filename = 'Flickr8k.token.txt'
 # load descriptions
 doc = load_doc(filename)
 # parse descriptions
